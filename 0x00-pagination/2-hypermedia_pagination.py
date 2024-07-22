@@ -62,4 +62,5 @@ class Server:
         if total_pages % 1 != 0:
             total_pages += 1
         return dict(page_size=len(data), page=page, data=data,
-                    next_page=next_page, prev=prev_page, tt=int(total_pages))
+                    next_page=next_page, prev_page=prev_page,
+                    total_pages=int(total_pages))
