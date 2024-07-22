@@ -52,10 +52,14 @@ class Server:
         total_pages: the total number of pages in the dataset as an integer
         """
         data = self.get_page(page, page_size)
-        start_index, end_index = index_range(page, page_size)
-        next_page = (end_index + 1, page_size)
-        prev_page = (end_index - 1, page_size)
         dts = self.dataset()
-        total_pages = len(dts) / page_size
-        return dict(page_size=page_size, page=page, data=data,
-                    next_page=next_page, prev=prev_page, tt=total_pages)
+        tt_rows = len(dts)
+        next_page = page + 1
+        if index_range(page, page_size)[1] >= tt_rows:
+            next_page = None
+        prev_page = page - 1 if page > 1 else None
+        total_pages = tt_rows / page_size
+        if total_pages % 1 != 0:
+            total_pages += 1
+        return dict(page_size=len(data), page=page, data=data,
+                    next_page=next_page, prev=prev_page, tt=int(total_pages))
