@@ -22,3 +22,7 @@ Contains BasicCache class implementation
 [1-fifo_cache.py](./1-fifo_cache.py)
 
 Contains FIFOCache class implementation
+
+[2-lifo_cache.py](./2-lifo_cache.py)
+
+Contains LIFOCache class implementation
