@@ -30,3 +30,7 @@ Contains LIFOCache class implementation
 [3-lru_cache.py](./3-lru_cache.py)
 
 Contains LRUCache class implementation
+
+[4-mru_cache.py](./4-mru_cache.py)
+
+Contains MRUCache class implementation
