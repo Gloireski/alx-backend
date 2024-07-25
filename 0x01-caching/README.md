@@ -26,3 +26,7 @@ Contains FIFOCache class implementation
 [2-lifo_cache.py](./2-lifo_cache.py)
 
 Contains LIFOCache class implementation
+
+[3-lru_cache.py](./3-lru_cache.py)
+
+Contains LRUCache class implementation
