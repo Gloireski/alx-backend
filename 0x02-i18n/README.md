@@ -27,3 +27,7 @@ Contain basic Flask app setup with basic babel configuration in Config class
 [2-app.py](./2-app.py) [templates/2-index.html](./templates/2-index.html)
 
 Contain get_locale function definition to determine the best matches supportes language
+
+[3-app.py](./3-app.py) [templates/3-index.html](./templates/3-index.html) [translations/en/LC_MESSAGES/messages.po](./translations/en/LC_MESSAGES/messages.po) [translations/fr/LC_MESSAGES/messages.po](./translations/fr/LC_MESSAGES/messages.po)
+
+Contain translations files conf
