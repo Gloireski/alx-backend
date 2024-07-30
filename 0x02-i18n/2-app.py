@@ -21,7 +21,7 @@ def get_locale() -> str:
 
 
 app.config.from_object(Config)
-babel = Babel(app, locale_selector=get_locale())
+babel = Babel(app)
 
 
 @app.route("/")
