@@ -4,9 +4,9 @@ This project introduces us the internalization
 
 Learning Objectives
 
-** Learn how to parametrize Flask templates to display different languages
-** Learn how to infer the correct locale based on URL parameters, user settings or request headers
-** Learn how to localize timestamps
+* Learn how to parametrize Flask templates to display different languages
+* Learn how to infer the correct locale based on URL parameters, user settings or request headers
+* Learn how to localize timestamps
 
 ## Files
 
@@ -21,3 +21,9 @@ Contain respectively basic Flask app setup and html page that output "Hello worl
 [1-app.py](./1-app.py) [templates/1-index.html](./templates/1-index.html)
 
 Contain basic Flask app setup with basic babel configuration in Config class
+
+## Task 2
+
+[2-app.py](./2-app.py) [templates/2-index.html](./templates/2-index.html)
+
+Contain get_locale function definition to determine the best matches supportes language
