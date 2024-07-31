@@ -36,7 +36,7 @@ def get_locale() -> str:
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
-def get_user(ID) -> Union[Dict, None]:
+def get_user(ID) -> Union[Dict[str, Union[str, None]], None]:
     """
     returns a user dictionary or None
     if the ID cannot be found or if login_as was not passed
