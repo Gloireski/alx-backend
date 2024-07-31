@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-""" task 6 """
+""" task adv """
 from flask import Flask, render_template, request, g
-from flask_babel import Babel
+from flask_babel import Babel, format_datetime
 from typing import Dict, Union
 import pytz
+import datetime
 
 
 users = {
@@ -74,12 +75,14 @@ def before_request() -> None:
     """
     id = request.args.get('login_as')
     g.user = get_user(id)
+    g.time = format_datetime(datetime.datetime.now())
 
 
 @app.route("/")
 def hello_world():
     """ define basic hello workd route"""
-    return render_template('7-index.html')
+    # g.time = format_datetime()
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
