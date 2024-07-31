@@ -41,7 +41,7 @@ def get_user(ID) -> Union[Dict, None]:
     returns a user dictionary or None
     if the ID cannot be found or if login_as was not passed
     """
-    if ID :
+    if ID:
         return users.get(int(ID))
     return None
 
