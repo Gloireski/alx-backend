@@ -36,12 +36,11 @@ def get_locale() -> str:
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
-def get_user(ID) -> Union[Dict[str, Union[str, None]], None]:
+def get_user(ID) -> Union[Dict, None]:
     """
     returns a user dictionary or None
     if the ID cannot be found or if login_as was not passed
     """
-    # print(ID)
     return users.get(int(ID))
 
 
@@ -52,12 +51,11 @@ def before_request() -> None:
     and set it as a global on flask.g.user
     """
     id = request.args.get('login_as')
-    # print(id)
     g.user = get_user(id)
 
 
 @app.route("/")
-def hello_world() -> str:
+def hello_world():
     """ define basic hello workd route"""
     return render_template('5-index.html')
 
