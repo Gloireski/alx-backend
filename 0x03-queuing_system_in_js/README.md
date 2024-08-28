@@ -63,3 +63,4 @@ At the end of this project, you are expected to be able to explain to anyone, wi
   + Same result as [`1-redis_op.js`](1-redis_op.js).
 
 + [x] 4. **Node Redis client and advanced operations**
++ [x] 5. **Node Redis client publisher and subscriber**
