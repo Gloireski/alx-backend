@@ -95,4 +95,5 @@ At the end of this project, you are expected to be able to explain to anyone, wi
     + You must use `Kue` to set up the queue.
   + [`6-job_processor.js`](6-job_processor.js) and [`6-job_creator.js`](6-job_creator.js) are the same as [`5-subscriber.js`](5-subscriber.js) and [`5-publisher.js`](5-publisher.js) respectively but with a module to manage jobs.
 
-
++ [x] 8. **Track progress and errors with Kue: Create the Job creator**
+  + In a file named [`7-job_creator.js`](7-job_creator.js)
