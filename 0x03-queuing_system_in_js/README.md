@@ -80,3 +80,19 @@ At the end of this project, you are expected to be able to explain to anyone, wi
     + When the job is failing, log to the console `Notification job failed`.
   + Nothing else will happen - to process the job, go to the next task!
   + If you execute multiple time this file, you will see the `JOB ID` increasing - it means you are storing new job to process…
+
++ [x] 7. **Create the Job processor**
+  + In a file named [`6-job_processor.js`](6-job_processor.js):
+  + Create a queue with `Kue`.
+  + Create a function named `sendNotification`:
+    + It will take two arguments `phoneNumber` and `message`.
+    + It will log to the console `Sending notification to PHONE_NUMBER, with message: MESSAGE`.
+  + Write the queue process that will listen to new jobs on `push_notification_code`:
+    + Every new job should call the `sendNotification` function with the phone number and the message contained within the job data.
+  + **Requirements:**
+    + You only need one Redis server to execute the program.
+    + You will need to have two node processes to run each script at the same time.
+    + You must use `Kue` to set up the queue.
+  + [`6-job_processor.js`](6-job_processor.js) and [`6-job_creator.js`](6-job_creator.js) are the same as [`5-subscriber.js`](5-subscriber.js) and [`5-publisher.js`](5-publisher.js) respectively but with a module to manage jobs.
+
+
