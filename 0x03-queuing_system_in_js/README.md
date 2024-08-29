@@ -97,3 +97,6 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 + [x] 8. **Track progress and errors with Kue: Create the Job creator**
   + In a file named [`7-job_creator.js`](7-job_creator.js)
+
++ [x] 9. **Track progress and errors with Kue: Create the Job processor**
+  + In a file named [`7-job_processor.js`](7-job_processor.js)
